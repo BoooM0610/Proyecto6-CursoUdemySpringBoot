@@ -1,10 +1,10 @@
 package com.cursoudemy.app.models.dao;
 
 import com.cursoudemy.app.models.entity.Cliente;
+import org.springframework.data.repository.PagingAndSortingRepository;
 
-import java.util.List;
 
-public interface IClienteDao
+public interface IClienteDao extends PagingAndSortingRepository<Cliente, Long>
 {
-    public List<Cliente> findAll();
+
 }
