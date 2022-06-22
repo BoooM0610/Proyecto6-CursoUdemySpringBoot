@@ -1,3 +1,22 @@
 /* Populate tables */
-INSERT INTO clientes (id, nombre, apellido, email, create_at) VALUES (1, 'Andrés', 'Pérez', 'andres@gmail.com', '2020-04-02');
-INSERT INTO clientes (id, nombre, apellido, email, create_at) VALUES (2, 'Juana', 'González', 'jueana@gmail.com', '2020-03-11');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (1, 'Andrés', 'Pérez', 'andres@gmail.com', '2020-04-02', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (2, 'Juana', 'González', 'juana@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (3, 'Eduardo', 'Martínez', 'eduardo@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (4, 'Pablo', 'Flores', 'pablo@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (5, 'María', 'González', 'maria@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (6, 'Paula', 'Gómez', 'paula@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (7, 'Nuria', 'Cruz', 'nuria@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (8, 'Oscar', 'González', 'oscar@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (9, 'Ana', 'Martínez', 'ana@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (10, 'Luisa', 'Pérez', 'luisa@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (11, 'Luis', 'Cruz', 'luis@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (12, 'Álvaro', 'Gómez', 'alvaro@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (13, 'Juan', 'González', 'juan@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (14, 'Pepe', 'Flores', 'pepe@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (15, 'Víctor', 'González', 'victor@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (16, 'Valeria', 'Pérez', 'valeria@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (17, 'Daniella', 'Gómez', 'daniella@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (18, 'Olivia', 'González', 'olivia@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (19, 'Julia', 'Martínez', 'julia@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (20, 'Guille', 'Cruz', 'guille@gmail.com', '2020-03-11', '');
+INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (21, 'Diego', 'Flores', 'diego@gmail.com', '2020-03-11', '');
