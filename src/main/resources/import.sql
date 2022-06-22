@@ -20,3 +20,20 @@ INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (18, 
 INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (19, 'Julia', 'Martínez', 'julia@gmail.com', '2020-03-11', '');
 INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (20, 'Guille', 'Cruz', 'guille@gmail.com', '2020-03-11', '');
 INSERT INTO clientes (id, nombre, apellido, email, create_at, foto) VALUES (21, 'Diego', 'Flores', 'diego@gmail.com', '2020-03-11', '');
+
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Panasonic Pantalla LCD', 259990, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Sony Cámara Digital', 123490, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Apple Ipod shuffle', 12134, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Sony Notebook', 42112, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Hewlett Packard', 627452, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Bianchi Bicicleta', 72730, NOW());
+INSERT INTO productos (nombre, precio, create_at) VALUES ('Mica Comoda 5 Cajones', 52231, NOW());
+
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura de equipos de oficina', null, 1, NOW());
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1, 1, 1);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (2, 1, 4);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1, 1, 5);
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (1, 1, 7);
+
+INSERT INTO facturas (descripcion, observacion, cliente_id, create_at) VALUES ('Factura Bicicleta', 'Alguna nota importante!', 1, NOW());
+INSERT INTO facturas_items (cantidad, factura_id, producto_id) VALUES (3, 2, 6);

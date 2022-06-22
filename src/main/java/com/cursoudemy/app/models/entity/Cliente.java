@@ -9,7 +9,9 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -17,8 +19,6 @@ import java.util.Date;
 @Table(name = "clientes")
 public class Cliente implements Serializable
 {
-    private static final long serialVersionUID = 1L;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -39,5 +39,20 @@ public class Cliente implements Serializable
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date createAt;
 
+    @OneToMany(mappedBy = "cliente", fetch = FetchType.LAZY, cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Factura> facturas;
+
+    public Cliente()
+    {
+        this.facturas = new ArrayList<Factura>();
+    }
+
     private String foto;
+
+    public void addFactura(Factura factura)
+    {
+        this.facturas.add(factura);
+    }
+
+    private static final long serialVersionUID = 1L;
 }
