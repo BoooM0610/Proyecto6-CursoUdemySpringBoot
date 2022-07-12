@@ -1,7 +1,11 @@
 package com.cursoudemy.app.models.service;
 
 import com.cursoudemy.app.models.dao.IClienteDao;
+import com.cursoudemy.app.models.dao.IFacturaDao;
+import com.cursoudemy.app.models.dao.IProductoDao;
 import com.cursoudemy.app.models.entity.Cliente;
+import com.cursoudemy.app.models.entity.Factura;
+import com.cursoudemy.app.models.entity.Producto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +19,12 @@ public class ClienteServiceImpl implements IClienteService
 {
     @Autowired
     private IClienteDao clienteDao;
+
+    @Autowired
+    private IProductoDao productoDao;
+
+    @Autowired
+    private IFacturaDao facturaDao;
 
     @Override
     @Transactional(readOnly = true)
@@ -49,5 +59,26 @@ public class ClienteServiceImpl implements IClienteService
     public void delete(Long id)
     {
         clienteDao.deleteById(id);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Producto> findByNombre(String term)
+    {
+        return productoDao.findByNombreLikeIgnoreCase("%" + term + "%");
+    }
+
+    @Override
+    @Transactional
+    public void saveFactura(Factura factura)
+    {
+        facturaDao.save(factura);
+    }
+
+    @Override
+    @Transactional(readOnly = true)
+    public Producto findProductoById(Long id)
+    {
+        return productoDao.findById(id).orElse(null);
     }
 }
